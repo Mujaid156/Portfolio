@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/2b41decd56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link"><a href="#">Home</a></li>
+          <li class="navbar-link"><a href="#">About Me</a></li>
+          <li class="navbar-link"><a href="#">Experience</a></li>
+          <li class="navbar-link"><a href="#">Projects</a></li>
+          <li class="navbar-link"><a href="#">Contact</a></li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </nav>
+    </div>
+    <section class="img">
+      <div class="landing">
+        <div class="img-area">
+          <img
+            class="images"
+            src="./images/pexels-josh-sorenson-1714208.jpg"
+            alt=""
+          />
+        </div>
+        <div class="header">
+          <h1 class="name">My name is Mujaid.</h1>
+          <h2 class="aspire">I aspire to be a full stack developer.</h2>
+          <div class="social-bar">
+            <h3>Follow Me</h3>
+            <a href="https://github.com/Mujaid156"
+              ><i class="fab fa-github icon"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/mujaid-kariem-b8456115a/"
+              ><i class="fab fa-linkedin-in icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <div class="about">
+        <div class="avatar">
+          <img
+            src="./images/WhatsApp_Image_2021-05-11_at_10.15.46_AM-removebg-preview.png"
+            alt="My Avatar"
+          />
+        </div>
+        <h2 class="intro">I am Mujaid Kariem</h2>
+        <div class="personal">
+          <div class="about-myself">
+            <p class="myself">
+              I am a friendly and patient person but tend to be a little
+              introverted. I am a very hardworking individual because I find
+              learning new things makes our lives better. I am cautious by
+              nature but don't mind trying new things. I will approach this in a
+              methodical way until I am more familiar and will then be more
+              engaging in the activity.
+            </p>
+          </div>
+          <div class="passion">
+            <p class="myself">
+              I have always had an interest in technology since a young age, and
+              became even more passionate about it when I made friends in school
+              with similar interests. I've always wanted to be a game designer,
+              and because of this passion I have actively applied to many
+              different IT courses that I could find.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div
+          class="timeline-items item-1"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>job-1</h2>
+          <h3>title and year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            maiores.
+          </p>
+        </div>
+        <div
+          class="timeline-items item-2"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>job-1</h2>
+          <h3>title and year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            maiores.
+          </p>
+        </div>
+        <div
+          class="timeline-items item-3"
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>job-1</h2>
+          <h3>title and year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            maiores.
+          </p>
+        </div>
+        <div
+          class="timeline-items item-4"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        >
+          <h2>job-1</h2>
+          <h3>title and year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+            maiores.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="project-cards">
+      <div class="skills">
+        <div class="skill"><i class="fab fa-html5"></i></div>
+        <div class="skill"><i class="fab fa-css3-alt"></i></div>
+        <div class="skill"><i class="fab fa-python"></i></div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <img
+            src="./images/Screenshot_2021-05-03 Contact Form.png"
+            alt=""
+            class="card-img"
+          />
+          <div class="details">
+            <h2 class="heading">Contact Form</h2>
+            <h3 class="card-details">HTML/CSS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+              laudantium porro ipsa in voluptatum culpa.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://boring-heyrovsky-0bc5ba.netlify.app/"
+                target="_blank"
+                class="button"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Mujaid156/contact-form"
+                target="_blank"
+                class="button"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/Screenshot_2021-05-03 My Timeline.png"
+            alt=""
+            class="card-img"
+          />
+          <div class="details">
+            <h2 class="heading">My Timeline</h2>
+            <h3 class="card-details">HTML/CSS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Excepturi et hic suscipit dolores id sed.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://affectionate-tereshkova-d3dcfc.netlify.app/"
+                target="_blank"
+                class="button"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Mujaid156/timeline"
+                target="_blank"
+                class="button"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="./images/Screenshot_2021-05-03 Testimonial.png"
+            alt=""
+            class="card-img"
+          />
+          <div class="details">
+            <h2 class="heading">Testimonial</h2>
+            <h3 class="card-details">HTML/CSS</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Exercitationem libero mollitia facere eum voluptatibus! Nisi.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://sad-bose-ba1a74.netlify.app/"
+                target="_blank"
+                class="button"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Mujaid156/testimonial"
+                target="_blank"
+                class="button"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./nav.js" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
