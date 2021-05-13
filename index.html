@@ -5,20 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <script
       src="https://kit.fontawesome.com/2b41decd56.js"
       crossorigin="anonymous"
@@ -31,12 +18,12 @@
     <div class="navigation">
       <nav class="navbar">
         <ul class="navbar-links">
-          <li class="navbar-link"><a href="#">Home</a></li>
-          <li class="navbar-link"><a href="#about-me">About Me</a></li>
-          <li class="navbar-link"><a href="#experience">Experience</a></li>
-          <li class="navbar-link"><a href="#projects">Projects</a></li>
-          <li class="navbar-link"><a href="#testimon"></a>Testimonial</li>
-          <li class="navbar-link"><a href="#contact-me">Contact</a></li>
+          <li class="navbar-link"><a href="./index.html">Home</a></li>
+          <li class="navbar-link"><a href="./HTML/about.html">About Me</a></li>
+          <li class="navbar-link"><a href="./HTML/timeline.html">Experience</a></li>
+          <li class="navbar-link"><a href="./HTML/projects.html">Projects</a></li>
+          <li class="navbar-link"><a href="./HTML/testimonials.html">Testimonial</a></li>
+          <li class="navbar-link"><a href="./HTML/contact.html">Contact</a></li>
         </ul>
         <button class="navbar-button" onclick="toggleNavbar()">
           <i class="fas fa-ellipsis-v"></i>
@@ -46,426 +33,29 @@
 
     <!-- Landing page -->
 
-    <section class="img">
-      <div class="landing">
-        <div class="img-area">
-          <img
-            class="images"
-            src="./images/pexels-josh-sorenson-1714208.jpg"
-            alt=""
-          />
-        </div>
-        <div class="header">
-          <h1 class="name">My name is Mujaid.</h1>
-          <h2 class="aspire">I aspire to be a full stack developer.</h2>
+    <section class="landing">
+      <div class="header">
+        <h1 class="name">My name is Mujaid.</h1>
+        <h2 class="aspire">I aspire to be a full stack developer.</h2>
 
-          <!-- Social Bar -->
+        <!-- Social Bar -->
 
-          <div class="social-bar">
-            <h3>Follow Me</h3>
-            <a href="https://github.com/Mujaid156"
-              ><i class="fab fa-github icon"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/mujaid-kariem-b8456115a/"
-              ><i class="fab fa-linkedin-in icon"></i
-            ></a>
-          </div>
+        <div class="social-bar">
+          <h3>Follow Me</h3>
+          <a href="https://github.com/Mujaid156" target="_blank"
+            ><i class="fab fa-github icon"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mujaid-kariem-b8456115a/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in icon"></i
+          ></a>
         </div>
       </div>
+      
     </section>
+
     <div>
-      <!-- About myself -->
-
-      <div id="about-me" class="about">
-        <div class="avatar">
-          <img
-            src="./images/WhatsApp_Image_2021-05-11_at_10.15.46_AM-removebg-preview.png"
-            alt="My Avatar"
-          />
-        </div>
-        <h2 class="intro">I am Mujaid Kariem</h2>
-        <div class="personal">
-          <div class="about-myself">
-            <p class="myself">
-              I am a friendly and patient person but tend to be a little
-              introverted. I am a very hardworking individual because I find
-              learning new things makes our lives better. I am cautious by
-              nature but don't mind trying new things. I will approach this in a
-              methodical way until I am more familiar and will then be more
-              engaging in the activity.
-            </p>
-          </div>
-          <div class="passion">
-            <p class="myself">
-              I have always had an interest in technology since a young age, and
-              became even more passionate about it when I made friends in school
-              with similar interests. I've always wanted to be a game designer,
-              and because of this passion I have actively applied to many
-              different IT courses that I could find.
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="skill"><i class="fab fa-html5"></i></div>
-          <div class="skill"><i class="fab fa-css3-alt"></i></div>
-          <div class="skill"><i class="fab fa-python"></i></div>
-        </div>
-      </div>
-
-      <!-- Timeline -->
-
-      <div id="experience" class="timeline-container">
-        <h2 class="exp">Experience and Education</h2>
-        <div class="timeline-line"></div>
-        <div
-          class="timeline-items item-1"
-          data-aos="flip-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-        >
-          <h2>job-1</h2>
-          <h3>title and year</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            maiores.
-          </p>
-        </div>
-        <div
-          class="timeline-items item-2"
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-        >
-          <h2>job-1</h2>
-          <h3>title and year</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            maiores.
-          </p>
-        </div>
-        <div
-          class="timeline-items item-3"
-          data-aos="flip-right"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-        >
-          <h2>job-1</h2>
-          <h3>title and year</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            maiores.
-          </p>
-        </div>
-        <div
-          class="timeline-items item-4"
-          data-aos="flip-left"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
-        >
-          <h2>job-1</h2>
-          <h3>title and year</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            maiores.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project cards -->
-
-    <div id="projects" class="project-cards">
-      <div class="container">
-        <h2 class="projects">My Projects</h2>
-        <div class="card">
-          <img
-            src="./images/Screenshot_2021-05-03 Contact Form.png"
-            alt=""
-            class="card-img"
-          />
-          <div class="details">
-            <h2 class="heading">Contact Form</h2>
-            <h3 class="card-details">HTML/CSS</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-              laudantium porro ipsa in voluptatum culpa.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://boring-heyrovsky-0bc5ba.netlify.app/"
-                target="_blank"
-                class="button"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Mujaid156/contact-form"
-                target="_blank"
-                class="button"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./images/Screenshot_2021-05-03 My Timeline.png"
-            alt=""
-            class="card-img"
-          />
-          <div class="details">
-            <h2 class="heading">My Timeline</h2>
-            <h3 class="card-details">HTML/CSS</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Excepturi et hic suscipit dolores id sed.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://affectionate-tereshkova-d3dcfc.netlify.app/"
-                target="_blank"
-                class="button"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Mujaid156/timeline"
-                target="_blank"
-                class="button"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./images/Screenshot_2021-05-03 Testimonial.png"
-            alt=""
-            class="card-img"
-          />
-          <div class="details">
-            <h2 class="heading">Testimonial</h2>
-            <h3 class="card-details">HTML/CSS</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Exercitationem libero mollitia facere eum voluptatibus! Nisi.
-            </p>
-            <div class="buttons">
-              <a
-                href="https://sad-bose-ba1a74.netlify.app/"
-                target="_blank"
-                class="button"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Mujaid156/testimonial"
-                target="_blank"
-                class="button"
-                >Github</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./images/Screenshot_2021-05-12 Temperature Converter.png"
-            alt=""
-          />
-          <div class="details">
-            <h2 class="heading">Temp</h2>
-            <h3 class="card-details">PYTHON</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusantium, repudiandae?
-            </p>
-            <div class="buttons">
-              <a
-                href="https://replit.com/@Mujaid/Temperature-Converter#main.py"
-                target="_blank"
-                class="button"
-                >Live</a
-              >
-              <a
-                href="https://github.com/Mujaid156/TemperatureConversion"
-                target="_blank"
-                class="button"
-                ><i class="fab fa-github"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Testimonial -->
-
-    <div id="testimon" class="testi-container">
-      <h2 class="testi">Testimonials</h2>
-      <div id="slider" class="owl-carousel">
-        <div class="content-area">
-          <div class="content">
-            <div class="img-area-testi">
-              <img src="./images/pexels-justin-shaifer-1222271.jpg" alt="" />
-            </div>
-            <h2>name</h2>
-            <h4>job class</h4>
-            <q>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
-              aperiam alias quod excepturi molestias quidem ipsam. Recusandae
-              animi nobis hic minima ipsa, quas sit, doloribus consequuntur,
-              quam temporibus molestiae. Maiores.</q
-            >
-            <p class="social">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram-square"></i>
-              <i class="fab fa-twitter-square"></i>
-            </p>
-          </div>
-        </div>
-        <div class="content-area">
-          <div class="content">
-            <div class="img-area-testi">
-              <img src="./images/pexels-christina-morillo-1181519.jpg" alt="" />
-            </div>
-            <h2>name</h2>
-            <h4>job class</h4>
-            <q
-              >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-              itaque nesciunt quod enim magnam sit explicabo quos, molestias
-              quia illum quas qui ad id ducimus. Quo, corporis. In?
-            </q>
-            <p class="social">
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-instagram-square"></i>
-              <i class="fab fa-twitter-square"></i>
-            </p>
-          </div>
-        </div>
-        <div class="content-area">
-          <div class="content">
-            <div class="img-area-testi">
-              <img src="./images/pexels-daniel-xavier-1239291.jpg" alt="" />
-            </div>
-            <h2>name</h2>
-            <h4>job class</h4>
-            <q
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur cupiditate odio explicabo quisquam culpa quod beatae
-              voluptatum, eius consectetur corporis aliquid nam consequatur
-              ipsum deleniti hic eaque quidem vero officia iusto quibusdam
-              deserunt praesentium tempora molestias incidunt. Molestiae.
-            </q>
-            <p class="social">
-              <i class="fab fa-github"></i>
-              <i class="fab fa-linkedin-in"></i>
-              <i class="fab fa-twitter-square"></i>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="contact-me" class="section">
-      <div id="contactPage" class="content">
-        <!-- Contact Details -->
-        <div class="contact-form-container">
-          <div class="contact-details-container">
-            <!-- Page header -->
-            <header class="page-header-container">
-              <h2 class="page-heading">Let's get in touch</h2>
-            </header>
-            <!-- Please insert location, contact numbers and email elements here -->
-            <div class="icons">
-              <i class="fas fa-map-marker-alt heads"
-                ><p class="contact-detail heads">South Africa, Cape Town</p></i
-              >
-              <i class="fas fa-phone-volume heads"
-                ><p class="contact-detail heads">076 188 4456</p></i
-              >
-              <i class="fas fa-paper-plane heads"
-                ><p class="contact-detail heads">
-                  mujaid.kariem22@gmail.com
-                </p></i
-              >
-            </div>
-            <div class="group">
-              <a href="https://github.com/Mujaid156"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/mujaid-kariem-b8456115a/"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-
-          <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-
-          <form
-            id="contact-form"
-            action="https://formspree.io/f/myylekwk"
-            method="POST"
-          >
-            <input
-              class="contact-input"
-              type="text"
-              name="full_name"
-              id="full_name"
-              placeholder="Name"
-              required
-            />
-            <input
-              class="contact-input"
-              type="tel"
-              name="contact_no"
-              id="contact_no"
-              placeholder="Contact No"
-              required
-            />
-            <input
-              class="contact-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              required
-            />
-            <textarea
-              class="contact-input message"
-              name="message"
-              id="message"
-              placeholder="Type your message here"
-            ></textarea>
-            <button class="btn" type="submit">Submit Information</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <footer class="end">
-      <p><i class="far fa-copyright"></i></p>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
     <script src="./nav.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 1,
-          margin: 50,
-          loop: true,
-          stagePadding: 100,
-          dots: false,
-          autoplay: true,
-        });
-      });
-    </script>
   </body>
 </html>

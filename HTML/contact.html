@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../CSS/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/2b41decd56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li class="navbar-link"><a href="../index.html">Home</a></li>
+          <li class="navbar-link"><a href="./about.html">About Me</a></li>
+          <li class="navbar-link">
+            <a href="./timeline.html">Experience</a>
+          </li>
+          <li class="navbar-link">
+            <a href="./projects.html">Projects</a>
+          </li>
+          <li class="navbar-link">
+            <a href="./testimonials.html">Testimonial</a>
+          </li>
+          <li class="navbar-link"><a href="./contact.html">Contact</a></li>
+        </ul>
+        <button class="navbar-button" onclick="toggleNavbar()">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </nav>
+    </div>
+    <!-- Contact form -->
+    <!-- Page header -->
+    <header class="page-header-container">
+      <h2 class="title-head">Let's get in touch</h2>
+    </header>
+    <div id="contact-me" class="section">
+      <div id="contactPage" class="content">
+        <!-- Contact Details -->
+        <div class="contact-form-container">
+          <div class="contact-details-container">
+            <!-- Please insert location, contact numbers and email elements here -->
+            <div class="icons">
+              <i class="fas fa-map-marker-alt heads"
+                ><p class="contact-detail heads">South Africa, Cape Town</p></i
+              >
+              <i class="fas fa-phone-alt"
+                ><p class="contact-detail heads">076 188 4456</p></i
+              >
+              <i class="fas fa-paper-plane heads"
+                ><p class="contact-detail heads">
+                  mujaid.kariem22@gmail.com
+                </p></i
+              >
+            </div>
+            <div class="group">
+              <a href="https://github.com/Mujaid156" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mujaid-kariem-b8456115a/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/myylekwk"
+            method="POST"
+          >
+            <input
+              class="contact-input"
+              type="text"
+              name="full_name"
+              id="full_name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="contact-input"
+              type="tel"
+              name="contact_no"
+              id="contact_no"
+              placeholder="Contact No"
+              required
+            />
+            <input
+              class="contact-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="contact-input message"
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+            ></textarea>
+            <button class="btn" type="submit">Submit Information</button>
+          </form>
+        </div>
+      </div>
+      <footer class="end">
+        <p><i class="far fa-copyright"></i></p>
+      </footer>
+    </div>
+
+    <script src="../nav.js"></script>
+  </body>
+</html>

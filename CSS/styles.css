@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 34%,
+    rgba(9, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+/* #navbar {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 20px 20px; 
+  left: 20px;
+}  */
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  background: transparent;
+  position: fixed;
+  left: -100%;
+  /* width: 25vw; */
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 5px;
+  font-family: sans-serif;
+  /* transition: all 0.3s linear; */
+}
+
+.navbar-links a {
+  color: white;
+}
+
+.navbar-links.active {
+  top: 0;
+  left: 0;
+}
+
+.navbar-button {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  font-size: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: white;
+}
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-image: ; */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/pexels-josh-sorenson-1714208.jpg);
+  background-size: cover;
+}
+
+.navigation {
+  display: flex;
+  padding: 20% 0;
+  position: fixed;
+}
+
+.navbar-link {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.navbar-link a {
+  text-decoration: none;
+}
+
+.img-area img {
+  object-fit: cover;
+  width: 100vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  background-color: rgba(9, 9, 121, 1) 100%;
+  height: 100vh;
+  color: white;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.aspire {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.social-bar {
+  bottom: 0;
+  height: 39px;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: white;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.social-bar i {
+  display: flex;
+  justify-content: flex-end;
+}
