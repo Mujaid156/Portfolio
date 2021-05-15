@@ -29,15 +29,15 @@ body {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  background: transparent;
+  background: rgba(9, 9, 121, 1);
   position: fixed;
   left: -100%;
-  /* width: 25vw; */
-  height: 40vh;
+  width: 20vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  gap: 5px;
+  gap: 20px;
   font-family: sans-serif;
   /* transition: all 0.3s linear; */
 }
@@ -54,6 +54,7 @@ body {
 .navbar-button {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 100;
   font-size: 50px;
   background: none;
@@ -64,13 +65,8 @@ body {
 }
 
 .landing {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* background-image: ; */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/pexels-josh-sorenson-1714208.jpg);
-  background-size: cover;
 }
 
 .navigation {
@@ -108,9 +104,10 @@ body {
   font-size: 60px;
 }
 
-.aspire {
-  margin-top: 50px;
-  font-size: 20px;
+.names {
+  color: #2ccddb;
+  display: flex;
+  justify-content: center;
 }
 
 .social-bar {
@@ -134,4 +131,58 @@ body {
 .social-bar i {
   display: flex;
   justify-content: flex-end;
+}
+
+.header {
+  color: white;
+  padding: 50px;
+  font-family: sans-serif;
+  max-width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: right;
+  gap: 30px;
+}
+
+.img-bg {
+  width: 80%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.profile {
+  width: 225px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .landing {
+    flex-direction: column-reverse;
+  }
+  img {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    max-width: 100%;
+  }
+  .navbar-links {
+    width: 100vw;
+  }
+
+  .img-bg {
+    display: none;
+  }
+  .profile {
+    border-radius: 5%;
+  }
+  .name {
+    font-size: 40px;
+  }
 }

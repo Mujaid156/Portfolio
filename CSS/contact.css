@@ -19,16 +19,15 @@ body {
   display: flex;
   list-style-type: none;
   flex-direction: column;
-  color: #2ccddb;
-  background: transparent;
+  background: rgba(9, 9, 121, 1);
   position: fixed;
   left: -100%;
-  /* width: 25vw; */
-  height: 40vh;
+  width: 20vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  gap: 5px;
+  gap: 20px;
   font-family: sans-serif;
   /* transition: all 0.3s linear; */
 }
@@ -45,6 +44,7 @@ body {
 .navbar-button {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 100;
   font-size: 50px;
   background: none;
@@ -105,6 +105,14 @@ form {
   width: 100%;
 }
 
+.contact-header-container {
+  font-family: sans-serif;
+}
+
+.contact-detail {
+  font-family: sans-serif;
+}
+
 .page-header-container h2 {
   font-size: 50px;
 }
@@ -127,6 +135,7 @@ form {
   padding: 10% 15%;
   color: white;
   text-align: left;
+  font-family: sans-serif;
 }
 
 .contact-details-heading {
@@ -187,4 +196,26 @@ textarea {
   justify-content: flex-start;
   font-size: 25px;
   margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-links {
+    width: 100vw;
+  }
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heads {
+    font-size: 50%;
+  }
+  .contact-input {
+    width: 73%;
+    margin-left: 1%;
+  }
+  .btn {
+    width: 73%;
+    margin-left: 1%;
+  }
 }
