@@ -8,12 +8,12 @@ body {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 34%,
-    rgba(9, 9, 121, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
+    rgba(0, 0, 0, 1) 18%,
+    rgba(9, 9, 121, 1) 59%,
+    rgba(0, 212, 255, 1) 91%
   );
   font-family: sans-serif;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 /* #navbar {  
@@ -102,22 +102,31 @@ body {
 
 .name {
   font-size: 60px;
+  text-align: center;
 }
 
 .names {
-  color: #2ccddb;
+  color: black;
   display: flex;
   justify-content: center;
 }
 
+.aspire {
+  text-align: center;
+}
+
 .social-bar {
   bottom: 0;
-  height: 39px;
+  height: 29px;
   position: absolute;
   display: flex;
-  justify-content: flex-end;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
+}
+
+.social-bar a {
+  text-decoration: none;
+  display: flex;
 }
 
 .icon {
@@ -128,10 +137,10 @@ body {
   margin-left: 50px;
 }
 
-.social-bar i {
+/* .social-bar i {
   display: flex;
   justify-content: flex-end;
-}
+} */
 
 .header {
   color: white;
@@ -157,7 +166,7 @@ body {
   height: 200px;
   border-radius: 50%;
   margin: 0 auto;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   object-fit: cover;
 }
 
