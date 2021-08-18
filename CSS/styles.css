@@ -118,15 +118,29 @@ body {
 .social-bar {
   bottom: 0;
   height: 29px;
-  position: absolute;
   display: flex;
+  justify-content: center;
   font-size: 15px;
   color: white;
+  gap: 20px;
 }
 
 .social-bar a {
   text-decoration: none;
+}
+
+.social-bar i {
+  text-decoration: none;
   display: flex;
+  transition: ease-in 0.3s;
+}
+
+.social-bar i:hover {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 50%;
 }
 
 .icon {
@@ -134,7 +148,6 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 30px;
-  margin-left: 50px;
 }
 
 /* .social-bar i {
@@ -170,7 +183,7 @@ body {
   object-fit: cover;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 332px) {
   .landing {
     flex-direction: column-reverse;
   }
@@ -193,5 +206,9 @@ body {
   }
   .name {
     font-size: 40px;
+  }
+
+  .names {
+    color: white;
   }
 }
