@@ -193,10 +193,26 @@ h1 {
   .navbar-links {
     width: 100vw;
   }
+  .title-head {
+    margin-right: 25%;
+    margin-top: 15%;
+    font-size: 35px;
+  }
   .content-area {
     width: 80%;
-    display: flex;
-    align-items: space;
     margin-right: 100px;
+  }
+  .container {
+    margin-right: 15%;
+  }
+  .content_img {
+    width: 220px;
+  }
+  .card {
+    min-width: 400px;
+  }
+  .details {
+    display: flex;
+    justify-content: center;
   }
 }
