@@ -184,6 +184,9 @@ body {
 }
 
 @media screen and (max-width: 332px) {
+  body {
+    height: 100vh;
+  }
   .landing {
     flex-direction: column-reverse;
   }
@@ -200,6 +203,7 @@ body {
 
   .img-bg {
     display: none;
+    
   }
   .profile {
     border-radius: 5%;
