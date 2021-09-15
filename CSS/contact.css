@@ -84,7 +84,7 @@ form {
   justify-content: center;
   align-items: flex-start;
   width: 60%;
-  margin-top: 15%;
+  margin-top: 8%;
   color: white;
 }
 
@@ -126,7 +126,7 @@ form-tails::placeholder {
 
 .page-header-container h2 {
   font-size: 60px;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .group {
@@ -163,17 +163,16 @@ form-tails::placeholder {
 
 .contact-details-container i {
   display: flex;
-  margin-bottom: 45px;
+  /* margin-bottom: 45px; */
   font-size: 30px;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 40px;
   font-size: 25px;
   width: 100%;
-  margin-left: 25%;
 }
 
 .ico {
@@ -197,7 +196,7 @@ textarea {
   border: 3px solid black;
   font-size: 15px;
   padding: 15px 10%;
-  width: 190%;
+  width: 100%;
   transition: ease-in 0.3s;
   cursor: pointer;
 }
@@ -218,7 +217,7 @@ textarea {
 
 .img-bg {
   width: 40%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -236,7 +235,7 @@ textarea {
 .tails {
   display: flex;
   flex-direction: row;
-  width: 190%;
+  width: 100%;
 }
 
 .tail {
@@ -244,15 +243,11 @@ textarea {
 }
 
 .message {
-  width: 190%;
+  width: 100%;
 }
 
 .icons {
   gap: 50px;
-}
-
-.direct {
-  padding-left: 20px;
 }
 
 .direct span {
@@ -319,8 +314,8 @@ textarea {
     margin-left: 1%;
   }
   .btn {
-    width: 73%;
-    margin-left: 15%;
+    width: 100%;
+    /* margin-left: 2%; */
   }
 
   .icons {

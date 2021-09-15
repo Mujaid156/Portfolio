@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(0, 0, 0);
+background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 18%,
@@ -19,6 +19,7 @@ body {
   display: grid;
   place-items: center;
   padding: 5% 10%;
+  width: 100vw;
 }
 
 .navbar-links {
@@ -59,6 +60,7 @@ body {
   outline: none;
   padding: 20px;
   color: white;
+  cursor: pointer;
 }
 
 .navigation {
@@ -100,13 +102,11 @@ h1 {
 
 .card {
   width: 30%;
-
   margin: 1%;
-  min-width: 300px;
+  min-width: 150px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-
   padding: 1%;
 }
 
@@ -123,8 +123,8 @@ h1 {
   width: 100%;
   object-fit: contain;
   transform: scale(1);
-
   transition: 0.6s;
+  border-radius: 50% 20%;
 }
 
 .card-img:hover {
@@ -133,27 +133,28 @@ h1 {
 }
 
 .details {
-  padding: 20px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .message {
-  padding: 10px 5%;
-  border: 2px solid white;
-  color: white;
-  width: 19.5vw;
-  border-top: none;
-  margin-right: 50%;
-  margin-bottom: 10%;
+  
+    padding: 10px 5%;
+    border: 2px solid white;
+        border-top-color: white;
+        border-top-style: solid;
+        border-top-width: 2px;
+    color: white;
+    border-top: none;
+
 }
 
 /* Parent Container */
 .content_img {
   position: relative;
   width: 90%;
-  height: 50%;
   float: left;
   margin-left: 5%;
   object-fit: contain;
@@ -184,7 +185,7 @@ h1 {
 }
 
 .content_img:hover div {
-  padding: 8px 15px;
+
   visibility: visible;
   opacity: 1;
 }
@@ -200,19 +201,71 @@ h1 {
   }
   .content-area {
     width: 80%;
-    margin-right: 100px;
+    
   }
   .container {
-    margin-right: 15%;
+    width: 100%;
   }
   .content_img {
-    width: 220px;
+    width: 180px;
   }
-  .card {
-    min-width: 400px;
-  }
+
   .details {
     display: flex;
     justify-content: center;
+   
   }
+  .card {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .navbar-links {
+    width: 100vw;
+  }
+  .title-head {
+    margin-right: 25%;
+    margin-top: 15%;
+    font-size: 35px;
+  }
+  .content-area {
+    width: 80%;
+    
+  }
+  .container {
+    width: 100%;
+  }
+  .content_img {
+    width: 180px;
+  }
+
+  .details {
+    display: flex;
+    justify-content: center;
+   
+  }
+  .card {
+    width: 60vw;
+    overflow-x: hidden;
+  }
+  body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 1) 18%, rgba(9, 9, 121, 1) 59%, rgba(0, 212, 255, 1) 91% );
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-attachment: scroll;
+        background-size: auto;
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    padding: 56px;
+    width: 100vw;
+}
 }
