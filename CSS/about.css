@@ -118,10 +118,6 @@ p {
   margin-left: 20px;
 }
 
-li {
-  margin-top: 2%;
-}
-
 .skills {
   color: white;
   font-size: 100px;
@@ -163,8 +159,36 @@ li {
   flex-direction: column;
   align-items: center;
   font-size: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 h4 {
   margin-top: 2%;
+}
+
+.work {
+  gap: 20px;
+}
+footer {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 18%,
+    rgba(9, 9, 121, 1) 59%,
+    rgba(0, 212, 255, 1) 91%
+  );
+	color: white;
+	text-align: center;
+}
+
+.bullet{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: solid 2px white;
+  padding: 25px;
 }

@@ -101,7 +101,7 @@ body {
 }
 
 .name {
-  font-size: 60px;
+  font-size: 33px;
   text-align: center;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .img-bg {
-  width: 80%;
+  width: 75%;
   height: 100vh;
   object-fit: cover;
 }
