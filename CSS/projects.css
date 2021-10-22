@@ -32,11 +32,6 @@ body {
   height: 100vh;
 }
 
-h1 {
-  width: 100%;
-  text-align: center;
-}
-
 .card {
   /* width: 48%;
   margin: 1%;
